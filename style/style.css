@@ -12,6 +12,7 @@ html{
 
 /* Header Styles */
 header {
+    width: 100%;
     background-color: #2d4059;
     color: white;
     padding: 40px 20px;
@@ -21,6 +22,7 @@ header {
 
 /* Navigation */
 nav {
+    width: 100%;
     background-color: #ffffff;
     padding: 15px;
     box-shadow: 0 4px 2px -2px gray;
@@ -159,9 +161,15 @@ footer {
 
 /* Media Query for Responsive Design */
 @media (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
     .sidebar {
         width: 100%;
         float: none;
+    }
+    header{
+        width: 100%;
     }
 
     .content {
