@@ -1,0 +1,189 @@
+ /* Fonts & Basic Styling */
+ body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Header Styles */
+header {
+    background-color: #2d4059;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Navigation */
+nav {
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 4px 2px -2px gray;
+    position: relative;
+    position: sticky ;
+    top: 0px;
+}
+
+nav a {
+    color: #2d4059;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ea5455;
+
+}
+.active{
+    color: green;
+    font-size: 1.6em;
+}
+
+/* Main Content Container */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Seminar Block Styling */
+.block {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.block h3 {
+    color: #2d4059;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.block p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.time {
+    font-weight: bold;
+    color: #ea5455;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px 0;
+    font-size: 1em;
+}
+
+/* Responsive Sidebar */
+.sidebar {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background-color: #f7f7f7;
+    
+}
+
+.sidebar h2 {
+    color: #2d4059;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar a:hover {
+    background-color: #ea5455;
+    color: white;
+}
+
+.content {
+    float: right;
+    width: 75%;
+    padding: 10px;
+}
+
+/* Clear floats */
+.clear {
+    clear: both;
+}
+
+/* Footer Styling */
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #2d4059;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+.copy{
+    width: 33%;
+}
+.direccion{
+    width: 33%;
+}
+.redes{
+    width: 33%;
+}
+.redes a{
+    color: #ddd;
+}
+
+
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        float: none;
+    }
+
+    .content {
+        width: 100%;
+        float: none;
+    }
+    nav{
+        text-align: center;
+        
+    }
+    footer{
+        flex-direction: column-reverse;
+    }
+    .copy{
+        width: 100%;
+        text-align: center;
+    }
+    .direccion{
+        width: 100%;
+    }
+    .redes{
+        width: 100%;
+    }
+
+}
